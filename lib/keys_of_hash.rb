@@ -1,5 +1,8 @@
+require "pry"
+
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+    array = []
+    array.push(self.keys) 
   end
 end
