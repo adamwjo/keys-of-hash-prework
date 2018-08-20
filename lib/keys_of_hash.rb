@@ -8,8 +8,8 @@ class Hash
         array.push(key)
       end
     end
+    array
   end
-  array
 end
 
 
