@@ -2,7 +2,12 @@ require "pry"
 
 class Hash
   def keys_of(*arguments)
-    array = self.keys_of(arguments)
+    array = []
+    self.collect do |key, value|
+      if arguments.include?(value)
+        array.push(key)
+      end
+    end
   end
 end
 
